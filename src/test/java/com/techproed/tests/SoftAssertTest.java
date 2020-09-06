@@ -92,6 +92,7 @@ public class SoftAssertTest {
         softAssert.assertAll(); // kesinlikle olmali
 
 
+
     }
 
 

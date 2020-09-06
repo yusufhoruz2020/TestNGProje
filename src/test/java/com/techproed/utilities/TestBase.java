@@ -1,17 +1,20 @@
-package com.techproed.tests;
+package com.techproed.utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class PriorityTest {
-    WebDriver driver;
+public class TestBase {
+    // private -> sadece ayni class'larda
+    // default -> ayni pakette
+    //protected -> ayni paket + child class'larda
+    // public her yerde
+
+    protected WebDriver driver;
 
     @BeforeClass
     public void setup() {
@@ -22,30 +25,8 @@ public class PriorityTest {
 
 
     }
-
-    @Test (priority = 1)
-    public void dropDownTest(){
-        driver.get("http://amazon.com");
-
-    }
-    @Test (priority = 0)
-    public void googleAramaTest(){
-
-        driver.get("http://google.com");
-
-
-    }
-    @Test   (priority = 2)
-    public void baslikTesti(){
-
-        driver.get("http://facebook.com");
-
-
-    }
-
     @AfterClass
-    public void tearDown (){
-
+    public void tearDown () {
+       // driver.quit();
     }
-
 }
