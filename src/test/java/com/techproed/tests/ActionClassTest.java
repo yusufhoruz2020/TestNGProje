@@ -58,4 +58,44 @@ public class ActionClassTest extends TestBase {
         }
         actions.sendKeys(Keys.PAGE_UP).perform();
     }
+    @Test
+    public void dragAndDrop () {
+        driver.get("http://google.com");
+        WebElement aramaKutusu = driver.findElement(By.name("q"));
+        WebElement logo = driver.findElement(By.id("hplogo"));
+        Actions actions = new Actions(driver);
+        //logo Webelementini, aramaKutusu webelemenitine sürükle ve birak
+        actions.dragAndDrop(logo,aramaKutusu).perform();
+    }
+    @Test
+    public void buyukKucukYazma(){
+        // MERHABA nasılsınız
+        driver.get("http://google.com");
+        // name="q"
+        WebElement aramaKutusu = driver.findElement(By.name("q"));
+        // bu standart yazma methodumuz
+        //aramaKutusu.sendKeys("merhaba nasılsınız");
+        // bu şekilde her karakteri büyük yapar
+        // aramaKutusu.sendKeys(Keys.SHIFT + "merhaba nasılsınız");
+        Actions actions = new Actions(driver);
+        actions.moveToElement(aramaKutusu).click()
+                .keyDown(Keys.SHIFT)
+                .sendKeys("merhaba")
+                .keyUp(Keys.SHIFT)
+                .sendKeys(" nasılsınız")
+                .perform();
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
