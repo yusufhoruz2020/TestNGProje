@@ -1,5 +1,6 @@
 package com.techproed.tests;
 
+import com.techproed.utilities.Driver;
 import com.techproed.utilities.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -42,6 +43,8 @@ public class FileDownloadTest extends TestBase {
     public void dosyaDownload () throws InterruptedException {
 
 
+
+
         driver.get("http://the-internet.herokuapp.com/download");
 
         WebElement amsterdam = driver.findElement(By.partialLinkText("Amsterdam.jpg"));
@@ -51,5 +54,8 @@ public class FileDownloadTest extends TestBase {
         boolean varMi  = Files.exists(Paths.get("C:\\Users\\Sibi\\Downloads\\Amsterdam.jpg"));
         Assert.assertTrue(varMi);
     }
+
+
+
 
 }
