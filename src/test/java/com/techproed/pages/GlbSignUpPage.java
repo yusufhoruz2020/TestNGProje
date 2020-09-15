@@ -14,8 +14,6 @@ public class GlbSignUpPage {
     @FindBy (id = "email")
      public WebElement emailKutusu;
 
-
-
     @FindBy (id = "name")
     public WebElement nameKutusu;
 
