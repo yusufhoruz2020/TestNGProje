@@ -1,0 +1,38 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite belirli methodlar">
+
+    <test name="Test - method test">
+
+        <!-- XML dosyasinda degisiklik yaptiktan sonra, dosyayi CTRL+S
+        ile ya da File -> Saye ile kaydetmeniz gerekiyor -->
+       <classes>
+           <class name="com.techproed.tests.ActionClassTest">
+
+               <methods>
+                   <!-- Method eklemek  icin "include"-->
+                   <include name="sagTiklama"></include>
+                   <include name="hoverOver"></include>
+               </methods>
+           </class>
+           <class name="com.techproed.tests.WaitTest">
+               <methods>
+                   <!-- exclude icine yazilan test haric diger classlar calisir -->
+                   <exclude name="implicitlywait"></exclude>
+
+
+
+               </methods>
+
+
+
+
+           </class>
+
+
+
+       </classes>
+
+
+
+    </test>
+</suite>

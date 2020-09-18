@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite - Test Gruplari">
+    <test name="grubu 'fhctrip' olan testler">
+        <groups>
+            <run>
+                
+                <!-- include ve exclude   -->
+                <include name="fhctrip"></include>
+                
+                
+            </run>
+            
+            
+        </groups>
+        
+            <packages>
+                <package name=".*"></package>
+            </packages>
+    </test>
+
+</suite>

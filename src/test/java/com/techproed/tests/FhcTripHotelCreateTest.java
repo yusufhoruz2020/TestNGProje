@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 public class FhcTripHotelCreateTest extends TestBase {
-    @Test
+    @Test (groups = {"fhctrip", "hotelolusturma"})
     public void test01 () {
         giris();
         FhcTripHotelCreatePage fhcTripHotelCreatePage = new FhcTripHotelCreatePage(driver);
