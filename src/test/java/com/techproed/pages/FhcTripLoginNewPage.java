@@ -1,17 +1,17 @@
 package com.techproed.pages;
 
-import org.openqa.selenium.WebDriver;
+import com.techproed.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class FhcTripLoginPage { //
-    WebDriver driver;
-    public FhcTripLoginPage(WebDriver driver) {
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
+public class FhcTripLoginNewPage {
+    public FhcTripLoginNewPage () {
+        PageFactory.initElements(Driver.getDriver(),this);
     }
-    @FindBy (id ="UserName")
+
+
+    @FindBy(id ="UserName")
     public WebElement userName;
 
     @FindBy (id = "Password")
@@ -19,5 +19,4 @@ public class FhcTripLoginPage { //
 
     @FindBy (xpath = "//button[@type='submit']")
     public WebElement login;
-
 }

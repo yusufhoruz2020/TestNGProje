@@ -15,7 +15,7 @@ public class FacebookLoginPage {
     public WebElement emailKutusu;
 
     @FindBy (id = "pass")
-    public WebElement sifreKutusu;
+    public WebElement sifreKutusu; //
 
 
 }

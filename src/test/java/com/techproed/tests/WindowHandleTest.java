@@ -1,5 +1,6 @@
 package com.techproed.tests;
 
+import com.techproed.utilities.TestBase;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 

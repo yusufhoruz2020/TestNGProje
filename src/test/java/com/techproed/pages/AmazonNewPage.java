@@ -12,4 +12,10 @@ public class AmazonNewPage {
     }
     @FindBy (id ="twotabsearchtextbox")
     public WebElement aramaKutusu;
+
+    // <input type="submit" class="nav-input" value="Go" tabindex="20">
+    @FindBy (xpath ="//input[@value='Go']")
+    public WebElement aramaButonu;
+
+
 }

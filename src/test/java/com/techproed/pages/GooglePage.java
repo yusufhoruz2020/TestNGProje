@@ -27,6 +27,6 @@ public class GooglePage {
     public WebElement aramaKutusu;  //findElement
 
    @FindBy (xpath = "//tbody/tr")
-    public List<WebElement> liste ; // findelements ('s' harfine dikkat
+    public List<WebElement> liste ; // findelements ('s' harfine dikkatt
 
 }
