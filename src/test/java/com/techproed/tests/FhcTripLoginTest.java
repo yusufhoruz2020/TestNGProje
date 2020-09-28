@@ -1,7 +1,6 @@
 package com.techproed.tests;
 
 import com.techproed.pages.FhcTripLoginPage;
-import com.techproed.utilities.TestBase;
 import org.testng.annotations.Test;
 
 public class FhcTripLoginTest extends TestBase {

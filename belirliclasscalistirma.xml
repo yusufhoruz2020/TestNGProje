@@ -1,6 +1,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite fhctrip-qa.com">
 
+
     <test name="Test - fhctrip-qa testleri">
 
        <!-- XML dosyasinda degisiklik yaptiktan sonra, dosyayi CTRL+S
@@ -18,25 +19,10 @@
     <test name="Test - Facebook testler">
         <classes>
             <class name="com.techproed.smoketests.FacebookLoginTest"></class>
-            
-            
-            
         </classes>
         
-
-        
     </test>
-    <test name="Test - Smoke Test Paketi">
-        <packages>
-            
-            <package name="com.techproed.smoketests"></package>
-            
-            
-        </packages>
-        
-        
-        
-    </test> 
+
     
     
 </suite>

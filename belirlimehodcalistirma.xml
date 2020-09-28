@@ -19,16 +19,9 @@
                    <!-- exclude icine yazilan test haric diger classlar calisir -->
                    <exclude name="implicitlywait"></exclude>
 
-
-
                </methods>
 
-
-
-
-           </class>
-
-
+           </class
 
        </classes>
 

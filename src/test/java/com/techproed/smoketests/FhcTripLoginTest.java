@@ -1,9 +1,7 @@
 package com.techproed.smoketests;
 
-import com.techproed.pages.FacebookLoginPage;
 import com.techproed.pages.FhcTripLoginPage;
 import com.techproed.utilities.ConfigurationReader;
-import com.techproed.utilities.TestBase;
 import org.testng.annotations.Test;
 
 public class FhcTripLoginTest extends TestBase {

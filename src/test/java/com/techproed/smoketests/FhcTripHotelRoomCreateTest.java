@@ -2,7 +2,6 @@ package com.techproed.smoketests;
 
 import com.techproed.pages.FhcTripHotelRoomCreatePage;
 import com.techproed.utilities.ConfigurationReader;
-import com.techproed.utilities.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;

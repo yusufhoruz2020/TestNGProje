@@ -1,6 +1,5 @@
 package com.techproed.tests;
 
-import com.techproed.utilities.Driver;
 import com.techproed.utilities.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
